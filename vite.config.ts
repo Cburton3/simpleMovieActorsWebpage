@@ -12,4 +12,6 @@ const vitestConfig: VitestUserConfigInterface = {
 export default defineConfig({
   plugins: [checker({ typescript: true })],
   test: vitestConfig.test,
+  //me
+  root: './src', //root is gonna be below the src (and not outside like it was)
 });

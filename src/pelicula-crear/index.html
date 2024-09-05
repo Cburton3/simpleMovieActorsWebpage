@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../reseteo.css" />
+    <link rel="stylesheet" href="../estilos.css" />
+    <title>Crear Pelicula</title>
+  </head>
+  <body>
+    <main class="contenedor">
+      <div class="contenedor-h1">
+        <h1 class="cabecera-h1">Crear Pelicula</h1>
+      </div>
+
+      <div class="card">
+        <form class="contenedor-formulario" id="formulario">
+          <div class="grupo-formulario">
+            <label for="title">Título:</label>
+            <input id="title" type="text" name="title" required />
+          </div>
+          <div class="grupo-formulario">
+            <label for="title">Año:</label>
+            <input id="year" type="number" name="year" required />
+          </div>
+          <div class="grupo-formulario">
+            <label for="director">Director:</label>
+            <input id="director" type="text" name="director" required />
+          </div>
+          <div class="grupo-formulario">
+            <label for="director">Description:</label>
+            <textarea
+              id="description"
+              name="description"
+              rows="4"
+              required
+            ></textarea>
+          </div>
+          <div class="grupo-formulario">
+            <label for="cover_url">Portada:</label>
+            <input type="text" id="cover_url" name="cover_url" required />
+          </div>
+          <button type="submit" id="crearPelicula">Crear Pelicula</button>
+        </form>
+      </div>
+    </main>
+    <script type="module" src="./pelicula-crear.ts"></script>
+  </body>
+</html>
